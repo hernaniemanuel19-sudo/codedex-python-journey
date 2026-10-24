@@ -1,0 +1,58 @@
+class Pokemon:
+  def __init__(self, entry, name, types, description, is_caught):
+    self.entry = entry
+    self.name = name
+    self.types = types
+    self.description = description
+    self.is_caught = is_caught
+
+  def speak(self):
+    print(self.name, self.name)
+
+  def display_details(self):
+    print('Entry Number:' + str(self.entry))
+    print('Name:' + (self.name))
+    print('Type:' + str(self.types))
+    print('Description:' + (self.description))
+    
+    if self.is_caught:
+      print((self.name) + 'has already been caught!')
+    else:
+      print((self.name) + 'is not caught!')
+
+pikachu = Pokemon(
+  '25',
+  'Pikachu',
+  'Electric',
+  'It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.',
+  True
+)
+
+charmander = Pokemon(
+    4,
+    "Charmander",
+    ["Fire"],
+    "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    False
+)
+
+bulbasaur = Pokemon(
+    1,
+    "Bulbasaur",
+    ["Grass", "Poison"],
+    "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+    True
+)
+
+pikachu.speak()
+pikachu.display_details()
+
+print()
+
+charmander.speak()
+charmander.display_details()
+
+print()
+
+bulbasaur.speak()
+bulbasaur.display_details()
