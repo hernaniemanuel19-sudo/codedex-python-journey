@@ -1,0 +1,70 @@
+gryffindor = 0
+ravenclaw = 0
+hufflepuff = 0 
+slytherin = 0
+
+print("01)Do you like Dawn or Dusk?")
+print("1) Dawn")
+print("2) Dusk")
+resposta1 = int(input("Escreva a respota, 1 ou 2? "))
+
+if resposta1 == 1:
+  gryffindor += 1
+  ravenclaw += 1
+elif resposta1 == 2:
+  hufflepuff += 1
+  slytherin += 1
+else:
+  print("Resposta inválida")
+
+print("Q2) When I’m dead, I want people to remember me as:")
+print("1) The Good")
+print("2) The Great")
+print("3) The Wise")
+print("4) The Bold")
+resposta2 = int(input("Escreva a respota, 1, 2, 3 0u 4? "))
+
+if resposta2 == 1:
+  hufflepuff += 2
+elif resposta2 == 2:
+  slytherin += 2
+elif resposta2 == 3:
+  ravenclaw += 2
+elif resposta2 == 4:
+  gryffindor += 2
+else:
+  print("Resposta inválida.")
+
+print("Q3) Which kind of instrument most pleases your ear?")
+print("1) The violin")
+print("2) The trumpet")
+print("3) The piano")
+print("4) The drum")
+resposta3 = int(input("Escreva a respota, 1, 2, 3 ou 4? "))
+
+if resposta3 == 1:
+  slytherin += 4
+elif resposta3 == 2:
+  hufflepuff += 4
+elif resposta3 == 3:
+  ravenclaw += 4
+elif resposta3 == 4:
+  gryffindor += 4
+else:
+  print("Resposta inválida.")
+
+print("Gryffindor:", gryffindor)
+print("Ravenclaw:", ravenclaw)
+print("Hufflepuff:", hufflepuff)
+print("Slytherin:", slytherin)
+
+maior = max(gryffindor, ravenclaw, hufflepuff, slytherin)
+
+if maior == gryffindor:
+  print("O maior é o Gryffindor:", gryffindor)
+elif maior == ravenclaw:
+  print("O maior é o Ravenclaw:", ravenclaw)
+elif maior == hufflepuff:
+  print("O maior é o Hufflepuff:", hufflepuff)
+elif maior == slytherin:
+  print("O maior é o Slytherin:", slytherin)
