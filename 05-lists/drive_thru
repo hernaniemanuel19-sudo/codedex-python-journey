@@ -1,29 +1,15 @@
-def welcome():
-  print("Boa tarde!")
-  print("1 - 🍔 Cheeseburger")
-  print("2 - 🍟 Fries")
-  print("3 - 🥤 Soda")
-  print("4 - 🍦 Ice Cream")
-  print("5 - 🍪 Cookie")
+things_to_do = [
+  '🚀 Criar a melhor plataforma para aprender programação de sempre.',
+  '⛰️ Percorrer o Pacific Crest Trail.',
+  '🏡 Construir uma casa em forma de A e criar algumas cabras.',
+  '🌏 Viver algures na Ásia durante um ano.',
+  '🎸 Lançar um álbum.',
+  '📝 Escrever um livro.',
+  '🏆 Alcançar 100 mil subscritores no YouTube.',
+  '🚐 Fazer uma viagem de estrada com a família.',
+  '🍳 Abrir um restaurante acolhedor no interior.',
+  '👴🏻 Envelhecer sem arrependimentos.'
+]
 
-def get_item(number):
-  if number == 1:
-    return('🍔 Cheeseburger')
-  elif number == 2:
-    return('🍟 Fries')
-  elif number == 3:
-    return('🥤 Soda')
-  elif number == 4:
-    return('🍦 Ice Cream')
-  elif number == 5:
-    return('🍪 Cookie')
-  else:
-    return('Item inválido')
-
-welcome()
-
-escolha = int(input("Escolha o seu pedido: "))
-
-item = get_item(escolha)
-
-print("Você pediu:", item)
+for i in things_to_do:
+  print(i)
