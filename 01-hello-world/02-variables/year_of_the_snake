@@ -1,0 +1,9 @@
+year = 2037
+focus = 1.0
+skin = "Dinheiro"
+shedding = True
+
+print(year)
+print(focus)
+print(skin)
+print(shedding)
